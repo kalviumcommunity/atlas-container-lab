@@ -5,11 +5,19 @@ const app = express();
 
 // Required environment variables
 const appEnv = process.env.APP_ENV;
-const appPort = process.env.APP_PORT;
+const appPort = process.env.APP_PORT||5000;
 
 // APP_ENV must be provided at run time
 if (!appEnv) {
+  
   console.error("Error: APP_ENV is not set");
+  process.exit(1);
+}
+
+// APP_PORT must be provided at run time
+if (!appPort) {
+  
+  console.error("Error: APP_PORT is not set");
   process.exit(1);
 }
 
