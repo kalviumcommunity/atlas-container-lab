@@ -13,6 +13,12 @@ if (!appEnv) {
   process.exit(1);
 }
 
+// APP_PORT must be provided at run time
+if (!appPort) {
+  console.error("Error: APP_PORT is not set");
+  process.exit(1);
+}
+
 // Single route
 app.get("/", (req, res) => {
   res.status(200).send("Atlas app is running");
