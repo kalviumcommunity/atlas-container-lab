@@ -40,3 +40,8 @@ See [`.env.example`](.env.example) for the required keys. Provide values **at ru
 ## Your task
 
 Find and fix the **three planted faults** so the build-and-run sequence above succeeds and the app answers at `http://localhost:8080`.
+
+
+CA Submission:
+
+Changes are in DOCKERFILE where i have changes in line 2 and line 14
