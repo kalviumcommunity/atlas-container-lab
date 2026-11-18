@@ -19,6 +19,6 @@ app.get("/", (req, res) => {
 });
 
 // Listen on the configured port (never hardcode)
-app.listen(appPort, () => {
+app.listen(appPort,"0.0.0.0", () => {
   console.log(`Atlas app listening on port ${appPort}`);
 });
